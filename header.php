@@ -6,9 +6,9 @@
 	<title><?php bloginfo('name'); ?></title>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/estilo.css">
@@ -27,15 +27,15 @@
 
 </head>
 <body>
-	
+
 <header>
-	<div class="ca-cabecera">
-		<div class="container">
+	<div class="container">
+		<div class="ca-cabecera">
 			<div class="row">
 				<div class="ml col-xs-12 col-sm-4 col-md-4 col-lg-4">
 					<div class="ca-logo-slogan">
 						<a class="logo-link" href="<?php bloginfo('url'); ?>/"><img class="logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="Canal Arquidiocesano"></a>
-					</div>			
+					</div>
 				</div>
 				<div class="mr col-xs-12 col-sm-8 col-md-8 col-lg-8">
 					<div class="ca-search-followers">
@@ -44,16 +44,17 @@
 							<a class="icon-facebook fb fa fa-facebook" href="https://www.facebook.com/masportusprendas/"></a>
 							<a class="icon-twitter tw fa fa-twitter" href="#"></a>
 							<a class="icon-youtube2 yt fa fa-youtube" href="#"></a>
-						</div>			
-					</div>			
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </header>
-
-<div class="contenido_menu">
-	<nav id="navegacion" class="navegando">
-		<?php  showMenu();  ?>
-	</nav>
+<div class="container">
+	<div class="contenido_menu">
+		<nav id="navegacion" class="navegando">
+			<?php  showMenu();  ?>
+		</nav>
+	</div>
 </div>

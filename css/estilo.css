@@ -101,15 +101,18 @@ header {
       list-style: none;
       display: flex;
       flex-flow: row wrap;
-      justify-content: center; }
+      justify-content: center;
+      text-transform: uppercase;
+      margin: 0px;
+      padding: 0px; }
       .contenido_menu nav ul li {
         float: left; }
         .contenido_menu nav ul li a {
           color: #212121;
-          padding: 25px 20px 25px 20px;
+          padding: 15px 15px 15px 15px;
           display: block;
           text-decoration: none;
-          font-size: 0.9em;
+          font-size: 1.0625em;
           transition: 0.5s ease;
           -o-transition: 0.5s ease;
           -webkit-transition: 0.5s ease; }
@@ -125,7 +128,7 @@ header {
 .slide {
   box-sizing: border-box;
   background-color: #fff;
-  margin: -16px auto 0px auto;
+  margin: 0px auto 0px auto;
   padding: 0px; }
   .slide .metaslider {
     box-sizing: border-box;

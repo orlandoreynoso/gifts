@@ -1,0 +1,31 @@
+.contenido_menu
+	box-sizing: border-box
+	background-color: $gris
+	margin: 0px auto
+	padding: 0px
+	width: 100%
+	nav
+		background: $yema
+		padding: 0px 0px 0px 0px
+		ul
+			overflow: hidden
+			list-style: none
+			display: flex
+			flex-flow: row wrap
+			justify-content: center
+			li
+				float: left
+				a
+					color: $gris
+					padding: 25px 20px 25px 20px
+					display: block
+					text-decoration: none
+					font-size: 0.9em
+					@include transicion_a()
+					&:hover
+						background: $verde2
+						color: $blanco
+					&:focus
+						outline: none						
+				span
+					margin-right: 10px

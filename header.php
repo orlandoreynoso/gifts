@@ -31,21 +31,15 @@
 <header>
 	<div class="container">
 		<div class="ca-cabecera">
-			<div class="row">
-				<div class="ml col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					<div class="ca-logo-slogan">
-						<a class="logo-link" href="<?php bloginfo('url'); ?>/"><img class="logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="Canal Arquidiocesano"></a>
-					</div>
+			<div class="row align-items-center">
+				<div class="col-sm-12 col-md-8 col-lg-4">
+					<?php get_template_part('template/header','logo'); ?>
 				</div>
-				<div class="mr col-xs-12 col-sm-8 col-md-8 col-lg-8">
-					<div class="ca-search-followers">
-						<div class="buscador"><?php  get_search_form();  //  if (is_page(5)) {   dynamic_sidebar('busqueda-header');   }   ?></div>
-						<div class="cuadro-redes">
-							<a class="icon-facebook fb fa fa-facebook" href="https://www.facebook.com/masportusprendas/"></a>
-							<a class="icon-twitter tw fa fa-twitter" href="#"></a>
-							<a class="icon-youtube2 yt fa fa-youtube" href="#"></a>
-						</div>
-					</div>
+				<div class="col-sm-12 col-md-8 col-lg-4">
+					<?php get_template_part('template/header','contacto'); ?>
+				</div>
+				<div class="col-sm-12 col-md-8 col-lg-4">
+					<?php get_template_part('template/header','redes'); ?>
 				</div>
 			</div>
 		</div>

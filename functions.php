@@ -7,6 +7,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 // END ENQUEUE PARENT ACTION
 
+require(get_stylesheet_directory().'/inc/menu-redes.php');
 
 function logo(){
     $logo = IMAGES.'/metanoiaradio.png';
@@ -29,7 +30,7 @@ function showMenu(){
     require( get_stylesheet_directory() . '/libs/totop.php' );
     require( get_stylesheet_directory() . '/libs/entradas.php' );
 
-   // include (TEMPLATEPATH . '/libs/breadcrumb.php'); 
+   // include (TEMPLATEPATH . '/libs/breadcrumb.php');
 
     /*==== n Widget=====*/
     if (function_exists('register_sidebar')) {
@@ -75,12 +76,12 @@ function showMenu(){
 
 
     /*
-    include (TEMPLATEPATH . '/libs/paginacion.php'); 
-    include (TEMPLATEPATH . '/libs/plugins.php'); 
+    include (TEMPLATEPATH . '/libs/paginacion.php');
+    include (TEMPLATEPATH . '/libs/plugins.php');
     paginacion();*/
 
 
-//    include (TEMPLATEPATH . 'libs/totop.php'); 
+//    include (TEMPLATEPATH . 'libs/totop.php');
 
 
 add_filter( 'woocommerce_breadcrumb_defaults', 'jk_change_breadcrumb_delimiter' );

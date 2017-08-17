@@ -58,3 +58,42 @@ header
           .t-i
             margin-right: 10px
             color: $amarillo
+/*===== buscardor ======**/
+header
+  .ca-cabecera
+    .ca-search-followers
+      background-color: #ffffff
+      display: flex
+/*===  menu redes sociales =====**/
+nav.sociales ul
+  list-style: none
+  display: flex
+  padding: 0px
+  .sr-text
+    display: none
+  li
+    margin-right: 10px
+    a
+      text-decoration: none
+      color: $amarillo
+      transition: 0.5s ease
+      &:hover
+        color: $grisoscuro
+    a::before
+      font-family: 'FontAwesome'
+      content: '\f08e'
+      font-size: 1.5em
+      -webkit-font-smoothing: antialiased
+      text-decoration: none
+    a[href*="facebook.com"]
+      &::before
+        content: '\f09a'
+    a[href*="twitter.com"]
+      &::before
+        content: '\f099'
+    a[href*="youtube.com"]
+      &::before
+        content: '\f16a'
+    a[href*="instagram.com"]
+      &::before
+        content: '\f16d'

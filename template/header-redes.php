@@ -1,20 +1,18 @@
-<div class="ca-search-followers">
+<div class="ca-search-followers text-right">
   <div class="search"><?php  get_search_form();   ?></div>
-  <div class="cuadro-redes">
+  <div class="cuadro-redes text-right">
     <?php
   $argsr = array(
     'theme_location' =>'menu-redes',
-    'container' => 'div',
-    'container_id'  => 'reeeeedes',
-  	'container_class'=> 'riosp',
-    'items_wrap' => '<ul id="ver" class="okk">%3$s</ul>'    
+    'container' => 'nav',
+    'container_id'  => 'sociales',
+  	'container_class'=> 'sociales',
+    'link_before' => '<span class="sr-text">',
+    'link_after' => '</span>',
+    'items_wrap' => '<ul id="menu-social" class="menu">%3$s</ul>'
   );
   wp_nav_menu($argsr);
 
     ?>
-
-    <a class="icon-facebook fb fa fa-facebook" href="https://www.facebook.com/masportusprendas/"></a>
-    <a class="icon-twitter tw fa fa-twitter" href="#"></a>
-    <a class="icon-youtube2 yt fa fa-youtube" href="#"></a>
   </div>
 </div>

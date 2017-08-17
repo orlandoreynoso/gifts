@@ -61,6 +61,41 @@ header .ca-cabecera .tredes {
         margin-right: 10px;
         color: #ffde00; }
 
+/*===== buscardor ======* */
+header .ca-cabecera .ca-search-followers {
+  background-color: #ffffff;
+  display: flex; }
+
+/*===  menu redes sociales =====* */
+nav.sociales ul {
+  list-style: none;
+  display: flex;
+  padding: 0px; }
+  nav.sociales ul .sr-text {
+    display: none; }
+  nav.sociales ul li {
+    margin-right: 10px; }
+    nav.sociales ul li a {
+      text-decoration: none;
+      color: #ffde00;
+      transition: 0.5s ease; }
+      nav.sociales ul li a:hover {
+        color: #212121; }
+    nav.sociales ul li a::before {
+      font-family: "FontAwesome";
+      content: "";
+      font-size: 1.5em;
+      -webkit-font-smoothing: antialiased;
+      text-decoration: none; }
+    nav.sociales ul li a[href*="facebook.com"]::before {
+      content: ""; }
+    nav.sociales ul li a[href*="twitter.com"]::before {
+      content: ""; }
+    nav.sociales ul li a[href*="youtube.com"]::before {
+      content: ""; }
+    nav.sociales ul li a[href*="instagram.com"]::before {
+      content: ""; }
+
 input[type="text"],
 input[type="tel"],
 input[type="number"],

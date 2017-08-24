@@ -7,6 +7,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 // END ENQUEUE PARENT ACTION
 
+require(get_stylesheet_directory().'/inc/estilos.php');
 require(get_stylesheet_directory().'/inc/menu-redes.php');
 
 function logo(){

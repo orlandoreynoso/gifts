@@ -1,21 +1,19 @@
 <?php
-
 /*
 
 Template Name: Portada
-  Template Post Type: post, page, product
+Template Post Type: post, page, product
 
- */
+*/
 
 ?>
-
 
 <?php get_header(); ?>
 <div class="container">
   <div class="slide">
       <div class="row">
         <div class="col-md-12">
-          <?php 
+          <?php
            // Este es para la pagina oficial echo do_shortcode("[metaslider id=188]");
           ?>
           <?php

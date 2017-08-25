@@ -21,12 +21,11 @@ header
     .ca-logo-slogan
       margin-bottom: 4px
       .logo-link
-        width: 100%
-        height: auto
         display: block
+        outline: none
         img.logo
           width: auto
-          height: 75px
+          height: 102px
           margin: 0px
           padding: 0px
 /* Caberece teléfonos*/
@@ -46,6 +45,7 @@ header
         width: 100%
         color: $blanco
         font-weight: 600
+        font-size: 1.5em
         &:hover
           text-decoration: none
         .t-c
@@ -53,6 +53,8 @@ header
         .t-n
           width: 100%
           display: block
+          padding: 0px
+          margin: 0px
           &:hover
             color: $amarillo
           .t-i
@@ -62,13 +64,29 @@ header
 header
   .ca-cabecera
     .ca-search-followers
-      background-color: #ffffff
+      width: 100%
+      padding: 5px
       display: flex
-/*===  menu redes sociales =====**/
+      flex-grow: row
+      flex-wrap: wrap
+      @media (min-width: 768px)
+        justify-content: flex-end
+      .search
+        width: 100%
+        padding: 20px 0px 0px 0px
+        margin: 0px
+        text-align: right
+      .cuadro-redes
+        width: 100%
+        padding: 0px
+        margin: 0px
+        text-align: right
+/*=======================*/
 nav.sociales ul
   list-style: none
   display: flex
   padding: 0px
+  justify-content: flex-end
   .sr-text
     display: none
   li
@@ -78,7 +96,7 @@ nav.sociales ul
       color: $amarillo
       transition: 0.5s ease
       &:hover
-        color: $grisoscuro
+        color: $blanco
     a::before
       font-family: 'FontAwesome'
       content: '\f08e'

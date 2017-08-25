@@ -24,12 +24,11 @@ header .ca-cabecera {
   header .ca-cabecera .ca-logo-slogan {
     margin-bottom: 4px; }
     header .ca-cabecera .ca-logo-slogan .logo-link {
-      width: 100%;
-      height: auto;
-      display: block; }
+      display: block;
+      outline: none; }
       header .ca-cabecera .ca-logo-slogan .logo-link img.logo {
         width: auto;
-        height: 75px;
+        height: 102px;
         margin: 0px;
         padding: 0px; }
 
@@ -47,14 +46,17 @@ header .ca-cabecera .tredes {
     box-sizing: border-box;
     width: 100%;
     color: #ffffff;
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 1.5em; }
     header .ca-cabecera .tredes .t-cin:hover {
       text-decoration: none; }
     header .ca-cabecera .tredes .t-cin .t-c {
       width: 100%; }
     header .ca-cabecera .tredes .t-cin .t-n {
       width: 100%;
-      display: block; }
+      display: block;
+      padding: 0px;
+      margin: 0px; }
       header .ca-cabecera .tredes .t-cin .t-n:hover {
         color: #ffde00; }
       header .ca-cabecera .tredes .t-cin .t-n .t-i {
@@ -63,14 +65,31 @@ header .ca-cabecera .tredes {
 
 /*===== buscardor ======* */
 header .ca-cabecera .ca-search-followers {
-  background-color: #ffffff;
-  display: flex; }
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-grow: row;
+  flex-wrap: wrap; }
+  @media (min-width: 768px) {
+    header .ca-cabecera .ca-search-followers {
+      justify-content: flex-end; } }
+  header .ca-cabecera .ca-search-followers .search {
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+    margin: 0px;
+    text-align: right; }
+  header .ca-cabecera .ca-search-followers .cuadro-redes {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: right; }
 
-/*===  menu redes sociales =====* */
+/*======================= */
 nav.sociales ul {
   list-style: none;
   display: flex;
-  padding: 0px; }
+  padding: 0px;
+  justify-content: flex-end; }
   nav.sociales ul .sr-text {
     display: none; }
   nav.sociales ul li {
@@ -80,7 +99,7 @@ nav.sociales ul {
       color: #ffde00;
       transition: 0.5s ease; }
       nav.sociales ul li a:hover {
-        color: #212121; }
+        color: #ffffff; }
     nav.sociales ul li a::before {
       font-family: "FontAwesome";
       content: "";

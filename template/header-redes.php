@@ -1,6 +1,6 @@
-<div class="ca-search-followers text-right">
+<div class="ca-search-followers">
   <div class="search"><?php  get_search_form();   ?></div>
-  <div class="cuadro-redes text-right">
+  <div class="cuadro-redes">
     <?php
   $argsr = array(
     'theme_location' =>'menu-redes',
